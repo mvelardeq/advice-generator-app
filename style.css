@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+}
+
+.advice-card{
+    padding: 2rem 2.5rem 4rem;
+    background-color: #313A49;
+    width: 550px;
+    height: 330px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.advice-card h6{
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+}
+.para-advice{
+    text-align: center;
+    color: #fff;
+}
+
+.mobile-divider{
+    display: none;
+}
+
+.dice-icon{
+    background-color: hsl(150, 100%, 66%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -27.5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dice-icon:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+@media (max-width:800px){
+    body{
+        font-size: 28px;
+    }
+
+    .advice-card{
+        width: 340px;
+        height: 340px;
+    }
+    .mobile-divider{
+        display: block;
+    }
+    .desktop-divider{
+        display: none;
+    }
+
+}
